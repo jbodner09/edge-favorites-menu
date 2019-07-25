@@ -1,0 +1,44 @@
+{
+"manifest_version": 2,
+"name": "Favorites Menu",
+"short_name": "Favorites",
+"description": "Replicates the Classic Microsoft Edge popup-style favorites/bookmarks menu",
+"version": "0.3",
+"icons": {
+  "16":  "/images/icon16.png",
+  "32":  "/images/icon32.png",
+  "48":  "/images/icon48.png",
+  "64":  "/images/icon64.png",
+  "128": "/images/icon128.png"
+  },
+"background": {
+  "scripts": ["/js/background.js"],
+  "persistent": true
+  },
+"browser_action": {
+  "default_icon": {
+    "16":  "/images/icon16.png",
+    "32":  "/images/icon32.png"
+    },
+  "default_title": "Favorites",
+  "default_popup": "/html/popup.html"
+  },
+"content_security_policy": "script-src 'self'; object-src 'self'",
+"externally_connectable": {
+  "accepts_tls_channel_id": false
+  },
+"incognito": "spanning",
+"offline_enabled": true,
+"options_ui": {
+  "page": "/html/options.html",
+  "open_in_tab": false
+},
+"permissions": [
+  "bookmarks",
+  "storage",
+  "tabs",
+  "unlimitedStorage",
+  "webRequest",
+  "https://www.google.com/s2/favicons"
+  ]
+}

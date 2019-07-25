@@ -1,0 +1,116 @@
+body {
+	height: 593px; /* This is the exact height of 18 entries + horizontal scroll bar (max = 600) */
+	width: 400px;
+	cursor: default;
+	white-space: nowrap;
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.invisible {
+	display: none;
+}
+
+.dark {
+	background-color: #3b3b3b;
+	color: #ffffff;
+}
+
+.favoriteIcon {
+	padding-left: 39px;
+	padding-right: 14px;
+	height: 16px;
+	width: 16px;
+	vertical-align: text-bottom;
+}
+
+.folderIcon {
+	padding-left: 14px;
+	padding-right: 14px;
+	height: 16px;
+	width: 41px;
+	vertical-align: text-bottom;
+}
+
+#wrapperDiv {
+	height: 593px;
+	width: 400px;
+	overflow-x: auto;
+	user-select: none;
+}
+
+#rootDiv {
+	display: inline-block;
+}
+
+.tableEntry {
+	padding-left: 8px;
+	padding-right: 18px; /* 18px prevents the vertical scroll bar from overlapping content */
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.tableHover:hover {
+	background-color: #eeeeee;
+}
+
+.tableHoverDark:hover{
+	background-color: #545454;
+}
+
+.indent0 {
+	padding-left: 0px; /* This, +... */
+	min-width: 382px; /* ...width of content + 18px padding mentioned above = body width */
+}
+
+.indent1 {
+	padding-left: 12px;
+	min-width: 370px;
+}
+
+.indent2 {
+	padding-left: 24px;
+	min-width: 358px;
+}
+
+.indent3 {
+	padding-left: 36px;
+	min-width: 346px;
+}
+
+.indent4 {
+	padding-left: 48px;
+	min-width: 334px;
+}
+
+.indent5 {
+	padding-left: 60px;
+	min-width: 322px;
+}
+
+.indent6 {
+	padding-left: 72px;
+	min-width: 310px;
+}
+
+.indent7 {
+	padding-left: 84px;
+	min-width: 298px;
+}
+
+.indent8 {
+	padding-left: 96px;
+	min-width: 286px;
+}
+
+.indent9 {
+	padding-left: 108px;
+	min-width: 274px;
+}
+
+.indent10 {
+	padding-left: 120px;
+	min-width: 262px;
+}
